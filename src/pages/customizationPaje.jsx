@@ -10,7 +10,7 @@ export default function CustomizationPage(){
 
 function MainContents(){
 
-    return <div className="flex flex-col items-center justify-center w-full bg-[url('static/images/BG-Grid.svg')]">
+    return <div className="flex flex-col items-center justify-center w-full bg-[url('/static/images/BG-Grid.svg')]">
             <HeroSection/>
             
         </div>
@@ -382,7 +382,7 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
       </div>
     );
   } 
-  
+
 function Buttons({onClickHandeler}){
     return <>
         <div className="flex items-center mt-8 gap-3">

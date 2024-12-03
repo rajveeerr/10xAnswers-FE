@@ -5,6 +5,7 @@ import HomePage from './pages/homePage';
 import CustomizationPage from './pages/customizationPaje';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Layout from './pages/layout';
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -29,6 +30,7 @@ function App() {
       </BrowserRouter>      
       {/* <ChatBot/> */}
     </RecoilRoot>
+    <Analytics/>
     </>)
 }
 
