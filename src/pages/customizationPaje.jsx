@@ -67,11 +67,11 @@ function HeroSection(){
           setChatbotConfig(prev => ({
             ...prev,
             draggable: newValue === true,
-            x: newValue === true ? (prev.x || 500) : null,
-            y: newValue === true ? (prev.y || 625) : null
+            x: newValue === true ? (prev.x || window.innerWidth-200) : null,
+            y: newValue === true ? (prev.y || window.innerHeight/2-290) : null
           }));
           console.log(chatbotConfig);
-          console.log(newValue);
+          console.log(window.innerHeight);
           
           return;
         }
@@ -358,7 +358,7 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
               className="bg-[#202020] px-6 text-[#dbdfe6] w-full max-w-[500px] rounded-2xl py-3 bg-transparent border-[#3d3d3de0] border"
               type="number"
               name="x"
-              defaultValue={500}
+              defaultValue={window.innerWidth}
               min={0}
               placeholder="Set X-Position of the ChatBox"
               onChange={onChange}
@@ -372,7 +372,7 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
               className="bg-[#202020] px-6 text-[#dbdfe6] w-full max-w-[500px] rounded-2xl py-3 bg-transparent border-[#3d3d3de0] border"
               type="number"
               name="y"
-              defaultValue={625}
+              defaultValue={window.innerHeight}
               min={0}
               placeholder="Set Y-Position of the ChatBox"
               onChange={onChange}
