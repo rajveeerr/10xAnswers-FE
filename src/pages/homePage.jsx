@@ -14,7 +14,7 @@ function MainContents(){
 }
 
 function HeroSection(){
-    return <div className="w-[90%] max-w-3xl flex items-center justify-center flex-col text-center pt-28 bg-[url('../../assets/BG-Grid.svg')]">
+    return <div className="w-[90%] max-w-3xl flex items-center justify-center flex-col text-center pt-28 bg-[url('static/images/BG-Grid.svg')]">
 
             <div className='floating-icons '>
                 <span className='icon forward forward-second' style={{padding:"0.4rem 0.7rem"}}><i class="fa-brands fa-github"></i></span>
@@ -99,9 +99,9 @@ function BotImages(){
     return <>
         <div className="flex mt-5 items-center justify-center w-full pt-8 pb-10 overflow-hidden">
             <span className="absolute w-80 h-[30rem] z-10" style={{ boxShadow: "rgb(1 140 7 / 26%) 0px 0px 60px 20px" }}>.</span>
-            <img className="w-80 relative z-10 left-20 hidden sm:block" src="../../assets/markdownTable.png"></img>
-            <img className="w-96 z-20 " src="../../assets/chatBot.png"></img>
-            <img className="w-80 relative right-20 z-10 hidden sm:block" src="../../assets/markdownCode.png"></img>
+            <img className="w-80 relative z-10 left-20 hidden sm:block" src="static/images/markdownTable.png"></img>
+            <img className="w-96 z-20 " src="static/images/chatBot.png"></img>
+            <img className="w-80 relative right-20 z-10 hidden sm:block" src="static/images/markdownCode.png"></img>
         </div>
     </>
 }

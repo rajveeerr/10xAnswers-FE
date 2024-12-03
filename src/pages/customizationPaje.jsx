@@ -10,7 +10,7 @@ export default function CustomizationPage(){
 
 function MainContents(){
 
-    return <div className="flex flex-col items-center justify-center w-full bg-[url('../../assets/BG-Grid.svg')]">
+    return <div className="flex flex-col items-center justify-center w-full bg-[url('static/images/BG-Grid.svg')]">
             <HeroSection/>
             
         </div>
@@ -30,8 +30,8 @@ function HeroSection(){
         cta: "Start Asking your Burning Questions",
         prompt: "You're 10xAnswers answer users with any query about how they can integrate you in their project",
         geminiApiKey: "",
-        userIconUrl: "",
-        botIconUrl: "",
+        userIconUrl: "static/images/logoImg.jpg",
+        botIconUrl: "static/images/logoImg2.jpg",
         stylizedTitle: {
           emphasized: "",
           normal: ""
