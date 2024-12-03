@@ -275,7 +275,7 @@ function HeroSection(){
                 <ChatBot 
                     chatWindowStyle={{backgroundColor: chatbotConfig.backgroundColor}}
                     chatComponentStyle={{maxHeight: chatbotConfig.height,height: chatbotConfig.height,width: chatbotConfig.width,margin: 0}}
-                    chatComponentClassName="static md:absolute"
+                    chatComponentClassName=""
                     botIcon={chatbotConfig.botIconUrl || "./logoImg2.jpg"}
                     userIcon={chatbotConfig.userIconUrl || "./logoImg.jpg"}
                     stylizeTitle={chatbotConfig.stylizedTitle}
@@ -353,7 +353,7 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
             <label className="px-3 text-sm flex items-center gap-1">
               Set Initial X-Position of the ChatBox
             </label>
-            <div className="text-xs px-3 font-light">This positioning determines where the chat component will first be present when draggable is set to true</div>
+            <div className="text-xs px-3 font-light">This positioning determines where the chat component will first be present when draggable is set to true. On mobile devices, the chatbot may not appear on the first try. Try adjusting the X and Y positioning and scroll through the site to locate it.</div>
             <input
               className="bg-[#202020] px-6 text-[#dbdfe6] w-full max-w-[500px] rounded-2xl py-3 bg-transparent border-[#3d3d3de0] border"
               type="number"
