@@ -271,24 +271,7 @@ function HeroSection(){
                     </div>
                 </div>
                 <div className="flex items-end justify-center flex-1">
-                {/* <ChatBot //avoid adding position to the chatbot through style or class it will result in abnormal behavior
-                    chatWindowStyle={{backgroundColor:"rgb(11 10 10)"}} 
-                    chatComponentStyle={{maxHeight:"580px",height:"auto",width:"400px",margin:0}}    
-                    chatComponentClassName="static md:absolute"
-                    botIcon="./logoImg2.jpg" 
-                    userIcon= "./logoImg.jpg"
-                    stylizeTitle={{emphasized:"10x",normal:"Answers"}}//if emphasized title and title both are given priority will be given to emp title
-                    geminiApi="AIzaSyDpdTZc3GzpvmAfjwfwE14BoQaTu4QmMo0"
-                    // x={500} 
-                    // y={625} 
-                    backendUrl="https://ask-10x-questions.vercel.app/" 
-                    // title="Why Ask?"
-                    // prompt="You are an artist" 
-                    draggable={false} 
-                    // description="Why not ask you questions?" 
-                    cta="Start Asking"
-                    startOpen={true}
-                /> */}
+                
                 <ChatBot 
                     chatWindowStyle={{backgroundColor: chatbotConfig.backgroundColor}}
                     chatComponentStyle={{maxHeight: chatbotConfig.height,height: chatbotConfig.height,width: chatbotConfig.width,margin: 0}}
@@ -398,52 +381,8 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
         )}
       </div>
     );
-  }  
-function BannerTitle(){
-    return <>
-        <a target="_blank" href="https://www.npmjs.com/package/10xanswers">
-            <p className="flex items-center justify-center gap-2 px-4 py-1 text-xs m-2 bg-[#101015] rounded-full border border-[#202029] cursor-pointer">
-                Live Now at 
-                <span className="text-lg bg-gradient-to-r from-[#9ee22f] to-white bg-clip-text text-transparent">
-                    <i class="fa-brands fa-npm"></i>
-                </span> 
-                Registry
-            </p>
-        </a>
-    </>
-}
-
-function Heading(){
-    return <>
-        <h1 className="text-4xl sm:text-5xl p-4 mb-2 bold leading-none text-lg ">
-            Design Your Perfect Chatbot
-        </h1>
-    </>
-}
-
-function SubHeading(){
-    return <>
-        <h4 className="font-light text-base w-[85%] max-w-xl">
-        Tweak attributes, see real-time changes, and generate your custom code—all in one place. With 10xAnswers, 
-        building a chatbot is as simple as copy, paste, and deploy.
-        </h4>
-    </>
-}
-function NPMCopyText(){
-    let copyHandeler=(e)=>{
-        navigator.clipboard.writeText("npm i 10xanswers");
-        e.target.innerText="Copied";
-        setTimeout(()=>
-            e.target.innerHTML=`<i class="fa-solid fa-copy"></i>npm i 10xanswers`
-        ,1000
-    )}
-
-    return <button onClick={copyHandeler}
-    className="flex items-center justify-center gap-2 px-5 py-3 mt-5 text-sm m-2 bg-[#101015] rounded-lg border border-[#202029] cursor-pointer">
-    <i class="fa-solid fa-copy"></i> npm i 10xanswers
-</button>
-}
-
+  } 
+  
 function Buttons({onClickHandeler}){
     return <>
         <div className="flex items-center mt-8 gap-3">
@@ -458,16 +397,6 @@ function Buttons({onClickHandeler}){
                     Download Package
                 </button>
             </a>
-        </div>
-    </>
-}
-function BotImages(){
-    return <>
-        <div className="flex mt-5 items-center justify-center w-full pt-8 pb-10 overflow-hidden">
-            <span className="absolute w-80 h-[30rem] z-10" style={{ boxShadow: "rgb(1 140 7 / 26%) 0px 0px 60px 20px" }}>.</span>
-            <img className="w-80 relative z-10 left-20 hidden sm:block" src="../../assets/markdownTable.png"></img>
-            <img className="w-96 z-20 " src="../../assets/chatBot.png"></img>
-            <img className="w-80 relative right-20 z-10 hidden sm:block" src="../../assets/markdownCode.png"></img>
         </div>
     </>
 }
