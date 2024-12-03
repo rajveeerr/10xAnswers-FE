@@ -14,7 +14,7 @@ function MainContents(){
 }
 
 function HeroSection(){
-    return <div className="w-[90%] max-w-3xl flex items-center justify-center flex-col text-center pt-28 bg-[url('static/images/BG-Grid.svg')]">
+    return <div className="w-[90%] max-w-3xl flex items-center justify-center flex-col text-center pt-28 bg-[url('/static/images/BG-Grid.svg')]">
 
             <div className='floating-icons '>
                 <span className='icon forward forward-second' style={{padding:"0.4rem 0.7rem"}}><i class="fa-brands fa-github"></i></span>
