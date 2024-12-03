@@ -67,7 +67,7 @@ function HeroSection(){
           setChatbotConfig(prev => ({
             ...prev,
             draggable: newValue === true,
-            x: newValue === true ? (prev.x || window.innerWidth-200) : null,
+            x: newValue === true ? (prev.x || window.innerWidth/2) : null,
             y: newValue === true ? (prev.y || window.innerHeight/2-290) : null
           }));
           console.log(chatbotConfig);
