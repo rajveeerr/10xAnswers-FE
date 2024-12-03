@@ -25,6 +25,7 @@ function HeroSection(){
             <Heading/>
             <SubHeading/>
             <NPMCopyText/>
+            
             <Buttons/>
             <div className='floating-icons' style={{}}>
                 {/* <span className='icon forward forward-second' style={{top:"-100px", background:"red",padding:"0.4rem 0.7rem"}}><i class="fa-brands fa-github"></i></span> */}
@@ -58,8 +59,8 @@ function Heading(){
 function SubHeading(){
     return <>
         <h4 className="font-light text-base w-[85%] max-w-xl">
-        10xAnswers is a pre-built chatbot component. Install it, customize 
-        prompts, and you're ready to go—no additional coding required.
+        10xAnswers is a pre-built chatbot component. Install it, customize the prompts, 
+        and it's ready to use in your next project.
         </h4>
     </>
 }
