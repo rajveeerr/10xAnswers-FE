@@ -67,11 +67,11 @@ function HeroSection(){
           setChatbotConfig(prev => ({
             ...prev,
             draggable: newValue === true,
-            x: newValue === true ? (prev.x || window.innerWidth/2) : null,
-            y: newValue === true ? (prev.y || window.innerHeight/2-290) : null
+            x: newValue === true ? (prev.x || 500) : null,
+            y: newValue === true ? (prev.y || 625) : null
           }));
           console.log(chatbotConfig);
-          console.log(window.innerHeight);
+          console.log(newValue);
           
           return;
         }
@@ -92,10 +92,8 @@ function HeroSection(){
       
 
       const generateChatBotCode = () => {
-        // Destructure specific props for special handling
         const { height, width, backgroundColor, ...restConfig } = chatbotConfig;
       
-        // Create chat component style object
         const chatComponentStyle = {
           maxHeight: height,
           height: 'auto',
@@ -103,12 +101,10 @@ function HeroSection(){
           margin: 0
         };
       
-        // Create chat window style object
         const chatWindowStyle = {
           backgroundColor: backgroundColor
         };
       
-        // Convert remaining config to prop string
         const configString = Object.entries(restConfig)
           .filter(([key, value]) => value !== null && value !== '')
           .map(([key, value]) => {
@@ -123,8 +119,7 @@ function HeroSection(){
           .join('\n    ');
       
         return `
-      // Customized ChatBot Component
-      import ChatBot from 'your-chatbot-library';
+      import ChatBot from '10xanswers';
       
       function CustomChatBot() {
         return (
@@ -358,7 +353,7 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
               className="bg-[#202020] px-6 text-[#dbdfe6] w-full max-w-[500px] rounded-2xl py-3 bg-transparent border-[#3d3d3de0] border"
               type="number"
               name="x"
-              defaultValue={window.innerWidth}
+              defaultValue={500}
               min={0}
               placeholder="Set X-Position of the ChatBox"
               onChange={onChange}
@@ -372,7 +367,7 @@ function InputLabelBox({label, name, inputType, defaultValue, select, textarea, 
               className="bg-[#202020] px-6 text-[#dbdfe6] w-full max-w-[500px] rounded-2xl py-3 bg-transparent border-[#3d3d3de0] border"
               type="number"
               name="y"
-              defaultValue={window.innerHeight}
+              defaultValue={625}
               min={0}
               placeholder="Set Y-Position of the ChatBox"
               onChange={onChange}
