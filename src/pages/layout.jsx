@@ -5,7 +5,6 @@ import Footer from "./components/footer"
 export default function Layout(){
     const {pathname} = useLocation();
     return <div>
-        
         <Navbar pathname={pathname}/>
         <Outlet/>
         <Footer/>

@@ -471,7 +471,7 @@
 }
 .backward-first{
     left: 25px;
-    top: 130px;
+    top: -130px;
     transform: rotate(13deg);
     transform: rotate(349deg);
     filter: blur(.8px);
@@ -481,7 +481,8 @@
     background: #e78400;
     background: linear-gradient(to bottom right, #e78400, #e99c49b0);
     padding: 0.2rem .6rem;
-    box-shadow: 0 10px 60px #937d02ed
+    box-shadow: none;
+    
 }
 .backward-second{
     left: 80px;

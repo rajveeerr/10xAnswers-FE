@@ -83,7 +83,8 @@ function Buttons(){
     return <>
         <div className="flex items-center mt-8 gap-3">
             <Link to={"/customize"}>
-                <button className="text-sm font-medium tracking-tight px-4 cursor-pointer duration-200 hover:bg-[#9de22fdf] py-2 rounded-full text-black bg-[#9ee22f]">
+                <button className="flex items-center justify-center gap-2 text-sm font-medium tracking-tight px-4 cursor-pointer duration-200 hover:bg-[#9de22fdf] py-2 rounded-full text-black bg-[#9ee22f] ">
+                    <i class="fa-solid fa-sliders"></i>
                     Start Customizing
                 </button>
             </Link>
@@ -98,11 +99,11 @@ function Buttons(){
 }
 function BotImages(){
     return <>
-        <div className="flex mt-5 items-center justify-center w-full pt-8 pb-10 overflow-hidden">
-            <span className="absolute w-80 h-[30rem] z-10" style={{ boxShadow: "rgb(1 140 7 / 26%) 0px 0px 60px 20px" }}>.</span>
-            <img className="w-80 relative z-10 left-20 hidden sm:block" src="static/images/markdownTable.png"></img>
-            <img className="w-96 z-20 " src="static/images/chatBot.png"></img>
-            <img className="w-80 relative right-20 z-10 hidden sm:block" src="static/images/markdownCode.png"></img>
+        <div className="flex mt-5 items-center justify-center w-full pt-8 pb-10 overflow-hidden"> 
+            <span className="absolute w-60 h-64 sm:w-80 sm:h-[30rem] z-10" style={{ boxShadow: "rgb(1 140 7 / 26%) 0px 0px 60px 20px" }}>.</span>
+            <img className="w-48 sm:w-80 relative z-10 left-20  sm:block" src="static/images/markdownTable.png"></img>
+            <img className="w-60 sm:w-96 z-20 " src="static/images/chatBot.png"></img>
+            <img className="w-48 sm:w-80 relative right-20 z-10  sm:block" src="static/images/markdownCode.png"></img>
         </div>
     </>
 }

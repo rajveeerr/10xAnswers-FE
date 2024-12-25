@@ -265,8 +265,7 @@ function HeroSection(){
                     <Buttons onClickHandeler={copyCodeToClipboard}/>
                     </div>
                 </div>
-                <div className="flex items-end justify-center flex-1">
-                
+                <div className="flex items-end justify-center flex-1">                  
                 <ChatBot 
                     chatWindowStyle={{backgroundColor: chatbotConfig.backgroundColor}}
                     chatComponentStyle={{maxHeight: chatbotConfig.height,height: chatbotConfig.height,width: chatbotConfig.width,margin: 0}}
