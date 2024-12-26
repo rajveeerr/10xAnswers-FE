@@ -84,13 +84,13 @@ function Buttons(){
         <div className="flex items-center mt-8 gap-3">
             <Link to={"/customize"}>
                 <button className="flex items-center justify-center gap-2 text-sm font-medium tracking-tight px-4 cursor-pointer duration-200 hover:bg-[#9de22fdf] py-2 rounded-full text-black bg-[#9ee22f] ">
-                    <i class="fa-solid fa-sliders"></i>
+                    <i class="hidden sm:block fa-solid fa-sliders"></i>
                     Start Customizing
                 </button>
             </Link>
             <a href="https://www.npmjs.com/package/10xanswers" target="_blank">
                 <button className="flex items-center justify-center gap-2 text-sm font-medium tracking-tight px-4 cursor-pointer duration-200 hover:bg-[#243022df] py-2 rounded-full text-white bg-[#101015] border border-[#1d1d22]">
-                    <i class="fa-brands fa-github"></i> 
+                    <i class="hidden sm:block fa-brands fa-github"></i> 
                     Download Package
                 </button>
             </a>
