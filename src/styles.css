@@ -57,7 +57,9 @@
     --input-option-icon-bg: #e0e0e0;
     --input-option-icon-color: #3a3a3a;
 } */
-
+body{
+    background-color: #000;
+}
 .chat-section {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;

@@ -48,6 +48,8 @@ function BannerTitle(){
 }
 function Heading(){
     return <>
+        <a href="https://peerlist.io/rajveeerr/project/10xanswers" target="_blank"><img src="./static/images/Winner-Medal-Weekly.svg"></img></a>
+        {/* <a href="https://peerlist.io/rajveeerr/project/10xanswers" target="_blank"><img src="./static/images/Launch_SVG_Dark.svg"></img></a> */}
         <h1 className="text-4xl sm:text-5xl p-4 mb-2 leading-none font-">
             Install, Customize, and See 
                 <span style={{ boxShadow: "0px 3px 0px 0px #78c94a", margin: ".4rem", padding:"0 .4rem"}}>10x</span>
