@@ -49,14 +49,14 @@ function HeroSection(){
                          value;
         console.log(name + value + type +checked);
         
-        if (name.startsWith('stylizedTitle.')) {
+        if (name.startsWith('stylizeTitle.')) {
           const titleKey = name.split('.')[1];
           console.log("rendering");
           
           setChatbotConfig(prev => ({
             ...prev,
-            stylizedTitle: {
-              ...prev.stylizedTitle,
+            stylizeTitle: {
+              ...prev.stylizeTitle,
               [titleKey]: newValue
             }
           }));
@@ -172,16 +172,16 @@ function HeroSection(){
                     />
                     <InputLabelBox 
                     label="Stylized Title" 
-                    name="stylizedTitle.emphasized"
-                    defaultValue={chatbotConfig.stylizedTitle.emphasized} 
+                    name="stylizeTitle.emphasized"
+                    defaultValue={chatbotConfig.stylizeTitle.emphasized} 
                     type="text"
                     placeholders="Enter the part of title you want to have some Style"
                     onChange={onChangeHandler}
                     />
                     <InputLabelBox 
                     label="Normal Title" 
-                    name="stylizedTitle.normal"
-                    defaultValue={chatbotConfig.stylizedTitle.normal} 
+                    name="stylizeTitle.normal"
+                    defaultValue={chatbotConfig.stylizeTitle.normal} 
                     type="text"
                     placeholders="Enter the remaining part where you want no styling"
                     onChange={onChangeHandler}
@@ -250,15 +250,15 @@ function HeroSection(){
                     />
                     <InputLabelBox 
                     label="User Icon Url" 
-                    name="userIconUrl"
-                    defaultValue={chatbotConfig.userIconUrl} 
+                    name="userIcon"
+                    defaultValue={chatbotConfig.userIcon} 
                     type="url"
                     onChange={onChangeHandler}
                     />
                     <InputLabelBox 
                     label="Bot Icon Url" 
-                    name="botIconUrl"
-                    defaultValue={chatbotConfig.botIconUrl} 
+                    name="botIcon"
+                    defaultValue={chatbotConfig.botIcon} 
                     type="url"
                     onChange={onChangeHandler}
                     />
@@ -270,9 +270,9 @@ function HeroSection(){
                     chatWindowStyle={{backgroundColor: chatbotConfig.backgroundColor}}
                     chatComponentStyle={{maxHeight: chatbotConfig.height,height: chatbotConfig.height,width: chatbotConfig.width,margin: 0}}
                     chatComponentClassName=""
-                    botIcon={chatbotConfig.botIconUrl || "./logoImg2.jpg"}
-                    userIcon={chatbotConfig.userIconUrl || "./logoImg.jpg"}
-                    stylizeTitle={chatbotConfig.stylizedTitle}
+                    botIcon={chatbotConfig.botIcon || "./logoImg2.jpg"}
+                    userIcon={chatbotConfig.userIcon || "./logoImg.jpg"}
+                    stylizeTitle={chatbotConfig.stylizeTitle}
                     geminiApi={chatbotConfig.geminiApiKey}
                     x={chatbotConfig.x}
                     y={chatbotConfig.y}
