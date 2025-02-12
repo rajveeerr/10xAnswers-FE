@@ -30,9 +30,9 @@ function HeroSection(){
         cta: "Start Asking your Burning Questions",
         prompt: "You're 10xAnswers answer users with any query about how they can integrate you in their project",
         geminiApiKey: "",
-        userIconUrl: "static/images/logoImg.jpg",
-        botIconUrl: "static/images/logoImg2.jpg",
-        stylizedTitle: {
+        userIcon: "static/images/logoImg.jpg",
+        botIcon: "static/images/logoImg2.jpg",
+        stylizeTitle: {
           emphasized: "",
           normal: ""
         },
